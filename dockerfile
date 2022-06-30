@@ -1,4 +1,5 @@
-FROM centos:7.9.2009
+FROM ubuntu:latest
 MAINTAINER madhu
 RUN mkdir /opt/madhu
-RUN yum install docker -y
+RUN apt-get update -y
+RUN apt-get install git -y
