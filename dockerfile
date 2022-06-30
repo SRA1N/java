@@ -1,2 +1,3 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html
+FROM centos:latest
+MAINTAINER madhu
+RUN yum install git -y
