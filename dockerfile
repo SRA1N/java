@@ -1,4 +1,6 @@
 FROM centos:latest
 MAINTAINER madhu
 RUN mkdir /opt/madhu
-RUN yum install git -y
+RUN yum clean all
+RUN yum update
+RUN yum install yum-utils
