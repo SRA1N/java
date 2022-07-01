@@ -1,5 +1,4 @@
-FROM ubuntu:latest
-MAINTAINER madhu
-RUN mkdir /opt/madhu
-RUN apt-get update -y
-RUN apt-get install git -y
+FROM lolhens/baseimage-openjre
+ADD target/springbootApp.jar springbootApp.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "springbootApp.jar"]
